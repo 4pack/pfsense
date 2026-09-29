@@ -86,7 +86,7 @@ foreach ($ifdescrs as $ifdescr => $ifname):
 	$ifinfo = get_interface_info($ifdescr);
 	if ($ifinfo['mbim_link']) {
 		/* Driver-managed mobile broadband interface. */
-		$typeicon = 'signal';
+		$typeicon = 'fa-solid fa-signal';
 	} else if ($ifinfo['pppoelink'] || $ifinfo['pptplink'] || $ifinfo['l2tplink']) {
 		/* PPP link (non-cell) - looks like a modem */
 		$typeicon = 'fa-regular fa-hard-drive';
